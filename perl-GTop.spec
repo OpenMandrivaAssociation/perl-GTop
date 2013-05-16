@@ -11,7 +11,7 @@ Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
 Source0:	http://search.cpan.org/CPAN/authors/id/M/MJ/MJH/%{upstream_name}-%{upstream_version}.tar.gz
 
-BuildRequires:	libgtop2.0-devel
+BuildRequires:	pkgconfig(libgtop-2.0)
 Buildrequires:	perl-devel
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
 Requires:	perl 
