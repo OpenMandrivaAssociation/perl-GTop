@@ -3,7 +3,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:	2
+Release:	3
 
 Summary:	Perl interface to libgtop
 License:	GPL+ or Artistic
@@ -13,7 +13,6 @@ Source0:	http://search.cpan.org/CPAN/authors/id/M/MJ/MJH/%{upstream_name}-%{upst
 
 BuildRequires:	pkgconfig(libgtop-2.0)
 Buildrequires:	perl-devel
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
 Requires:	perl 
 
 %description
