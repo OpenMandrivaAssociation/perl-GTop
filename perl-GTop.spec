@@ -1,15 +1,15 @@
 %define	upstream_name	 GTop
-%define	upstream_version 0.17
+%define upstream_version 0.18
 
 Name:       perl-%{upstream_name}
-Version:    %perl_convert_version %{upstream_version}
-Release:	3
+Version:    %perl_convert_version 0.18
+Release:	1
 
 Summary:	Perl interface to libgtop
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://search.cpan.org/CPAN/authors/id/M/MJ/MJH/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/authors/id/M/MJ/MJH/GTop-0.18.tar.gz
 
 BuildRequires:	pkgconfig(libgtop-2.0)
 Buildrequires:	perl-devel
@@ -64,4 +64,5 @@ rm -rf %{buildroot}
 + Revision: 199735
 - initial perl-GTop package
 - create perl-GTop
+
 
