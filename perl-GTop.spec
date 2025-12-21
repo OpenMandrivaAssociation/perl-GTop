@@ -11,6 +11,7 @@ Group:		Development/Perl
 Url:		https://search.cpan.org/dist/%{upstream_name}
 Source0:	http://www.cpan.org/authors/id/M/MJ/MJH/GTop-0.18.tar.gz
 
+BuildRequires:	make
 BuildRequires:	pkgconfig(libgtop-2.0)
 Buildrequires:	perl-devel
 Requires:	perl 
