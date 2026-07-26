@@ -1,14 +1,12 @@
 %define	upstream_name	 GTop
-%define upstream_version 0.18
-
 Name:       perl-%{upstream_name}
-Version:    %perl_convert_version 0.18
-Release:	3
+Version:    0.18
+Release:	4
 
 Summary:	Perl interface to libgtop
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
+Url:		https://metacpan.org/dist/%{upstream_name}
 Source0:	http://www.cpan.org/authors/id/M/MJ/MJH/GTop-0.18.tar.gz
 
 BuildRequires:	make
@@ -20,7 +18,7 @@ Requires:	perl
 GTop is a Perl interface to libgtop.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
@@ -55,9 +53,7 @@ rm -rf %{buildroot}
 
 * Tue Aug 04 2009 Jérôme Quelin <jquelin@mandriva.org> 0.160.0-1mdv2010.0
 + Revision: 409301
-- rebuild using %%perl_convert_version
-
-* Fri Aug 08 2008 Thierry Vignaud <tv@mandriva.org> 0.16-2mdv2009.0
+- rebuild using %0.18 Fri Aug 08 2008 Thierry Vignaud <tv@mandriva.org> 0.16-2mdv2009.0
 + Revision: 268514
 - rebuild early 2009.0 package (before pixel changes)
 
